@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionPulishVC">
+            <connections>
+                <outlet property="questionPulishTable" destination="woX-AH-ruD" id="EKv-VP-74M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="woX-AH-ruD">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8aJ-iA-LCb"/>
+                        <outlet property="delegate" destination="-1" id="tGF-Pw-9Ec"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="woX-AH-ruD" secondAttribute="bottom" id="M8G-aB-iNc"/>
+                <constraint firstItem="woX-AH-ruD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PU8-NC-0ZI"/>
+                <constraint firstAttribute="trailing" secondItem="woX-AH-ruD" secondAttribute="trailing" id="RMe-QG-zA9"/>
+                <constraint firstItem="woX-AH-ruD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rj2-lg-Ots"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="woX-AH-ruD"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="M8G-aB-iNc"/>
+                    <exclude reference="PU8-NC-0ZI"/>
+                    <exclude reference="RMe-QG-zA9"/>
+                    <exclude reference="rj2-lg-Ots"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="woX-AH-ruD"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="M8G-aB-iNc"/>
+                    <include reference="PU8-NC-0ZI"/>
+                    <include reference="RMe-QG-zA9"/>
+                    <include reference="rj2-lg-Ots"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

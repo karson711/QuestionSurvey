@@ -1,0 +1,24 @@
+//
+//  QuestionSurvey.pch
+//  QuestionSurvey
+//
+//  Created by kunge on 16/6/7.
+//  Copyright © 2016年 kunge. All rights reserved.
+//
+
+#ifndef QuestionSurvey_pch
+#define QuestionSurvey_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+typedef enum QuestionOpertionType{
+    AddType = 0,//添加选项
+    OptionType = 1,//新增输入选项
+    FixationOptionType = 2,//固定输入选项
+    TitleType = 3//问题标题项
+}QuestionOpertionType;
+
+
+
+#endif /* QuestionSurvey_pch */
